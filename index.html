@@ -31,18 +31,17 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body class="bg-gray-900 text-white">
-    <div id="particles-js"></div>
-    <header class="bg-gray-800 bg-opacity-50 py-6 px-4 sm:px-6 lg:px-8">
+    <div id="particles-js"></div> <header class="bg-gray-800 bg-opacity-50 py-6 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-3xl sm:text-4xl font-semibold text-white">Geetha B.R.</h1>
             <p class="text-gray-400 text-lg mt-2">MCA Graduate | Aspiring Software Developer</p>
             <nav class="mt-4">
                 <ul class="flex justify-center space-x-4 sm:space-x-6">
-                    <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
-                    <li><a href="skills.html" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a></li>
-                    <li><a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a></li>
-                    <li><a href="education.html" class="text-gray-300 hover:text-white transition-colors duration-300">Education</a></li>
-                    <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                    <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
+                    <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a></li>
+                    <li><a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a></li>
+                    <li><a href="#education" class="text-gray-300 hover:text-white transition-colors duration-300">Education</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,8 +52,104 @@
             <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">About Me</h2>
             <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
                 <p class="text-gray-300 leading-relaxed">
-                    As a MCA graduate with a passion for utilizing technology to solve problems, I am seeking an entry-level position to contribute to innovative projects while fostering professional growth. I have experience in Python, Java, and SQL, with a focus on AI/ML.
+                    As a MCA graduate with a passion for utilizing technology to solve problems, I am seeking an entry-level position to contribute to innovative projects while fostering professional growth.  I have experience in Python, Java, and SQL, with a focus on AI/ML.
                 </p>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">Skills</h2>
+            <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-semibold text-gray-200 mb-2">Programming Languages</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Python (AI/ML)</li>
+                            <li>JAVA</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-200 mb-2">Tools & Technologies</h3>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Pycharm IDE</li>
+                            <li>Eclipse IDE</li>
+                            <li>VSCode</li>
+                            <li>FastAPI</li>
+                            <li>LangChain</li>
+                            <li>FAISS</li>
+                            <li>Pandas</li>
+                            <li>Numpy</li>
+                            <li>SVM</li>
+                            <li>Hashing</li>
+                            <li>Kaggle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">Projects</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">Content and Question Generation From a Particular Book using LLM, LangChain, FAISS</h3>
+                    <p class="text-gray-300 mb-2">
+                        Developed an LLM-powered system to automatically extract book content and generate relevant questions, enhancing learning and information retrieval.
+                    </p>
+                    <p class="text-gray-400">
+                        Tools Used: Python, FastAPI, RAG architecture
+                    </p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">A Comparative Study on Fake Job Post-Prediction Using Different Data Mining Techniques</h3>
+                    <p class="text-gray-300 mb-2">
+                        Developed to improve fake job post detection through comparative analysis of data mining methods. Aimed to enhance online job security and user safety.
+                    </p>
+                    <p class="text-gray-400">
+                        Tools Used: Python, Pandas, Numpy, SVM
+                    </p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">Fuzzy Identity Based Data Integrity on Reliable Cloud Computing</h3>
+                    <p class="text-gray-300 mb-2">
+                        Developed a system for verifying data integrity in cloud computing using fuzzy identity-based cryptography, improving data trustworthiness and access control.
+                    </p>
+                    <p class="text-gray-400">
+                        Tools Used: Java, Hashing, Kaggle
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">SEA College of Science, Commerce and Arts</h3>
+                    <p class="text-gray-300 mb-1">Master of Computer Application - December 2024</p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">Seshadripuram Academy of Business Studies</h3>
+                    <p class="text-gray-300 mb-1">Bachelor of Computer Application - September 2022</p>
+                </div>
+                 <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-200 mb-2">Full Stack Java Development by Sonata Software Company</h3>
+                    <p class="text-gray-300 mb-1">Certification - January 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">Contact</h2>
+            <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                <ul class="text-gray-300 space-y-2">
+                    <li><strong>Phone:</strong> +91 7975654573</li>
+                    <li><strong>Email:</strong> geethabr19b02@gmail.com</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/geetha-b-r-3a84622ab" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">linkedin.com/in/geetha-b-r-3a84622ab</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/geetha252" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">https://github.com/geetha252</a></li>
+                </ul>
             </div>
         </section>
     </main>
@@ -176,6 +271,7 @@
     </script>
 </body>
 </html>
+
 
 
 
