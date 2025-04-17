@@ -84,7 +84,6 @@
       max-width: 1000px;
       margin: 3rem auto;
       padding: 0 2rem;
-      animation: popUp 1.2s ease-out;
       background: #ffffff;
       border-radius: 20px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -92,12 +91,14 @@
 
     section {
       margin-bottom: 3rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 0.6s ease-in-out;
     }
 
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    section.visible {
+      opacity: 1;
+      transform: translateX(0);
     }
 
     h2 {
@@ -106,7 +107,6 @@
       margin-bottom: 1rem;
       border-left: 5px solid #3b82f6;
       padding-left: 0.5rem;
-      animation: fadeInUp 1s ease-in-out;
     }
 
     ul {
@@ -127,88 +127,5 @@
     }
 
     .footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #e0eafc;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      animation: fadeIn 2s ease-in;
-    }
+      text
 
-    @keyframes fadeSlide {
-      0% { transform: translateY(-30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes popUp {
-      0% { transform: scale(0.9); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>👋 Hi, I'm Geetha B R</h1>
-    <p>MCA Graduate | AI/ML Enthusiast | Python Developer</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <section id="about">
-      <h2>💡 About Me</h2>
-      <p>I’m passionate about using technology to solve real-world problems. My interests lie in AI/ML, data security, and backend development using FastAPI and Python. I love exploring new tools and building smart solutions!</p>
-    </section>
-
-    <section id="projects">
-      <h2>🚀 Projects</h2>
-      <ul>
-        <li><strong>📘 Content & Question Generator:</strong> Extracts content from books and generates questions using LLM, LangChain, FAISS, and FastAPI.</li>
-        <li><strong>🔎 Fake Job Post Prediction:</strong> Detects fraudulent job posts using machine learning algorithms (SVM, Pandas, Numpy).</li>
-        <li><strong>☁️ Cloud Data Integrity:</strong> Verifies cloud data trust using fuzzy identity-based cryptography in Java.</li>
-      </ul>
-    </section>
-
-    <section id="education">
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>MCA</strong> – SEA College of Science, Commerce and Arts (2024)</li>
-        <li><strong>BCA</strong> – Seshadripuram Academy of Business Studies (2022)</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>🛠 Skills</h2>
-      <p><strong>Languages:</strong> Python, Java, SQL, HTML</p>
-      <p><strong>Tools & Tech:</strong> FastAPI, LangChain, FAISS, Pandas, VS Code, Eclipse, PyCharm</p>
-    </section>
-
-    <section id="contact">
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:geethabr19b02@gmail.com">geethabr19b02@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/geetha252">github.com/geetha252</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/geetha-b-r-3a84622ab">linkedin.com/in/geetha-b-r-3a84622ab</a></p>
-    </section>
-  </div>
-
-  <div class="footer">
-    <p>Made with ❤️ by Geetha B R | &copy; 2025</p>
-  </div>
-</body>
-</html>
