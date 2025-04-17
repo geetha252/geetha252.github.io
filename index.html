@@ -1,234 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geetha B R | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f7f7f7;
-      color: #333;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background: #333;
-      color: white;
-      padding: 6rem 2rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    header h1 {
-      font-size: 4rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.5s forwards 0.2s;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      margin-top: 1rem;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.5s forwards 0.4s;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #fff;
-      padding: 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    nav a {
-      color: #333;
-      text-decoration: none;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin: 0 2rem;
-      letter-spacing: 2px;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #3b82f6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
-    }
-
-    .page {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 80vh;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 1s ease, transform 1s ease;
-    }
-
-    .page.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      color: #333;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards 0.2s;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    li {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      margin-bottom: 1.2rem;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards 0.4s;
-    }
-
-    a {
-      color: #3b82f6;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #2563eb;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 2rem;
-      background: #333;
-      color: white;
-      margin-top: 4rem;
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideIn {
-      0% {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Geetha B R</h1>
-    <p>AI/ML Enthusiast | Python Developer | MCA Graduate</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <div class="page" id="about">
-      <h2>About Me</h2>
-      <p>I’m a passionate software developer with a keen interest in AI/ML, data security, and backend development using FastAPI and Python. I enjoy solving complex problems with code and am constantly learning new technologies.</p>
-    </div>
-
-    <div class="page" id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>📘 Content & Question Generator:</strong> Developed a tool that extracts content from books and generates questions using LLM, LangChain, FAISS, and FastAPI.</li>
-        <li><strong>🔎 Fake Job Post Prediction:</strong> Created a machine learning model to detect fraudulent job posts using SVM, Pandas, and Numpy.</li>
-        <li><strong>☁️ Cloud Data Integrity:</strong> Built a solution to verify cloud data trust using fuzzy identity-based cryptography in Java.</li>
-      </ul>
-    </div>
-
-    <div class="page" id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MCA</strong> – SEA College of Science, Commerce and Arts (2024)</li>
-        <li><strong>BCA</strong> – Seshadripuram Academy of Business Studies (2022)</li>
-      </ul>
-    </div>
-
-    <div class="page" id="skills">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Python, Java, SQL, HTML</p>
-      <p><strong>Tools & Technologies:</strong> FastAPI, LangChain, FAISS, Pandas, VS Code, Eclipse, PyCharm</p>
-    </div>
-
-    <div class="page" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:geethabr19b02@gmail.com">geethabr19b02@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/geetha252">github.com/geetha252</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/geetha-b-r-3a84622ab">linkedin.com/in/geetha-b-r-3a84622ab</a></p>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p>Made with ❤️ by Geetha B R | &copy; 2025</p>
-  </div>
-
-  <script>
-    // JavaScript to detect when pages are in view and add the "visible" class
-    window.addEventListener('scroll', function() {
-      let pages = document.querySelectorAll('.page');
-      pages.forEach(page => {
-        let pageTop = page.getBoundingClientRect().top;
-        if (pageTop < window.innerHeight - 100) {
-          page.classList.add('visible');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geetha B.R. - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
         }
-      });
-    });
-  </script>
+        /* Custom CSS for animations */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #111827; /* Dark background, similar to Tailwind's gray-900 */
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+        .particle {
+            background-color: #6b7280; /* Tailwind's gray-500 */
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="particles-js"></div>
+    <header class="bg-gray-800 bg-opacity-50 py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl sm:text-4xl font-semibold text-white">Geetha B.R.</h1>
+            <p class="text-gray-400 text-lg mt-2">MCA Graduate | Aspiring Software Developer</p>
+            <nav class="mt-4">
+                <ul class="flex justify-center space-x-4 sm:space-x-6">
+                    <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300">About</a></li>
+                    <li><a href="skills.html" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a></li>
+                    <li><a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a></li>
+                    <li><a href="education.html" class="text-gray-300 hover:text-white transition-colors duration-300">Education</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center sm:text-left">About Me</h2>
+            <div class="bg-gray-800 bg-opacity-50 rounded-lg shadow-lg p-6">
+                <p class="text-gray-300 leading-relaxed">
+                    As a MCA graduate with a passion for utilizing technology to solve problems, I am seeking an entry-level position to contribute to innovative projects while fostering professional growth. I have experience in Python, Java, and SQL, with a focus on AI/ML.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 bg-opacity-50 py-4 text-center">
+        <p class="text-gray-400">© 2024 Geetha B.R. All rights reserved.</p>
+    </footer>
+
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#6b7280' // Tailwind's gray-500
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#6b7280', // Tailwind's gray-500
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 0.8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
 </body>
 </html>
+
 
 
 
