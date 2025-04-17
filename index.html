@@ -4,97 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geetha B R | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
       color: #333;
-      line-height: 1.6;
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
 
     header {
-      background: linear-gradient(to right, #6366f1, #3b82f6);
+      background: #333;
       color: white;
-      padding: 4rem 1rem;
+      padding: 6rem 2rem;
       text-align: center;
-      animation: fadeSlide 1s ease-out;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
       position: relative;
-    }
-
-    header::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://www.transparenttextures.com/patterns/diagmonds.png');
-      opacity: 0.1;
-      z-index: 0;
+      overflow: hidden;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-      position: relative;
-      z-index: 1;
+      font-size: 4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s forwards 0.2s;
     }
 
     header p {
       font-size: 1.25rem;
-      position: relative;
-      z-index: 1;
+      margin-top: 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s forwards 0.4s;
     }
 
     nav {
+      display: flex;
+      justify-content: center;
       background: #fff;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
-      margin: 0 1rem;
+      color: #333;
       text-decoration: none;
-      color: #4f46e5;
       font-weight: 600;
-      transition: all 0.3s ease;
+      text-transform: uppercase;
+      margin: 0 2rem;
+      letter-spacing: 2px;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #1e3a8a;
-      transform: scale(1.1);
+      color: #3b82f6;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      flex-direction: column;
+      padding: 4rem 2rem;
     }
 
     .page {
-      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 80vh;
       opacity: 0;
-      transform: translateY(100px);
+      transform: translateY(50px);
       transition: opacity 1s ease, transform 1s ease;
     }
 
@@ -104,54 +94,76 @@
     }
 
     h2 {
-      font-size: 2rem;
-      color: #1e3a8a;
-      margin-bottom: 1rem;
-      border-left: 5px solid #3b82f6;
-      padding-left: 0.5rem;
-      animation: fadeInUp 1s ease-in-out;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.2s;
     }
 
     ul {
-      padding-left: 1.5rem;
+      list-style-type: none;
     }
 
     li {
-      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.4s;
     }
 
     a {
-      color: #2563eb;
+      color: #3b82f6;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #2563eb;
     }
 
     .footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: #e0eafc;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    @keyframes fadeSlide {
-      0% { transform: translateY(-30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
+      padding: 2rem;
+      background: #333;
+      color: white;
+      margin-top: 4rem;
     }
 
     @keyframes fadeInUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>👋 Hi, I'm Geetha B R</h1>
-    <p>MCA Graduate | AI/ML Enthusiast | Python Developer</p>
+    <h1>Geetha B R</h1>
+    <p>AI/ML Enthusiast | Python Developer | MCA Graduate</p>
   </header>
 
   <nav>
@@ -164,21 +176,21 @@
 
   <div class="container">
     <div class="page" id="about">
-      <h2>💡 About Me</h2>
-      <p>I’m passionate about using technology to solve real-world problems. My interests lie in AI/ML, data security, and backend development using FastAPI and Python. I love exploring new tools and building smart solutions!</p>
+      <h2>About Me</h2>
+      <p>I’m a passionate software developer with a keen interest in AI/ML, data security, and backend development using FastAPI and Python. I enjoy solving complex problems with code and am constantly learning new technologies.</p>
     </div>
 
     <div class="page" id="projects">
-      <h2>🚀 Projects</h2>
+      <h2>Projects</h2>
       <ul>
-        <li><strong>📘 Content & Question Generator:</strong> Extracts content from books and generates questions using LLM, LangChain, FAISS, and FastAPI.</li>
-        <li><strong>🔎 Fake Job Post Prediction:</strong> Detects fraudulent job posts using machine learning algorithms (SVM, Pandas, Numpy).</li>
-        <li><strong>☁️ Cloud Data Integrity:</strong> Verifies cloud data trust using fuzzy identity-based cryptography in Java.</li>
+        <li><strong>📘 Content & Question Generator:</strong> Developed a tool that extracts content from books and generates questions using LLM, LangChain, FAISS, and FastAPI.</li>
+        <li><strong>🔎 Fake Job Post Prediction:</strong> Created a machine learning model to detect fraudulent job posts using SVM, Pandas, and Numpy.</li>
+        <li><strong>☁️ Cloud Data Integrity:</strong> Built a solution to verify cloud data trust using fuzzy identity-based cryptography in Java.</li>
       </ul>
     </div>
 
     <div class="page" id="education">
-      <h2>🎓 Education</h2>
+      <h2>Education</h2>
       <ul>
         <li><strong>MCA</strong> – SEA College of Science, Commerce and Arts (2024)</li>
         <li><strong>BCA</strong> – Seshadripuram Academy of Business Studies (2022)</li>
@@ -186,13 +198,13 @@
     </div>
 
     <div class="page" id="skills">
-      <h2>🛠 Skills</h2>
+      <h2>Skills</h2>
       <p><strong>Languages:</strong> Python, Java, SQL, HTML</p>
-      <p><strong>Tools & Tech:</strong> FastAPI, LangChain, FAISS, Pandas, VS Code, Eclipse, PyCharm</p>
+      <p><strong>Tools & Technologies:</strong> FastAPI, LangChain, FAISS, Pandas, VS Code, Eclipse, PyCharm</p>
     </div>
 
     <div class="page" id="contact">
-      <h2>📬 Contact</h2>
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:geethabr19b02@gmail.com">geethabr19b02@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/geetha252">github.com/geetha252</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/geetha-b-r-3a84622ab">linkedin.com/in/geetha-b-r-3a84622ab</a></p>
@@ -217,6 +229,7 @@
   </script>
 </body>
 </html>
+
 
 
 
